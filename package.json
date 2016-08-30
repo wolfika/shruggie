@@ -1,0 +1,46 @@
+{
+  "name": "shruggie",
+  "version": "0.0.0",
+  "description": "Indicate your lack of knowledge with the one and only shruggie emoticon.",
+  "license": "MIT",
+  "repository": "wolfika/shruggie",
+  "author": {
+    "name": "Máté Farkas",
+    "email": "farkas.mate38@gmail.com",
+    "url": "github.com/wolfika"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && nyc ava"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    ""
+  ],
+  "dependencies": {
+    "meow": "^3.7.0"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "coveralls": "^2.11.12",
+    "nyc": "^7.1.0",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}
